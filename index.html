@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twin Shade — Loud. Inclusive. Streetwear.</title>
+  <meta name="description" content="Twin Shade is India's premium size-inclusive streetwear label. Jumpsuits, co-ords & bold fits for every body. Based in Jaipur." />
+
+  <!-- OG / Twitter -->
+  <meta property="og:title" content="Twin Shade — Loud. Inclusive. Streetwear." />
+  <meta property="og:description" content="Not your basic Indian streetwear. Bold fits, co-ords & jumpsuits for every size." />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta property="og:url" content="https://twinshade.in" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Twin Shade — Loud. Inclusive. Streetwear." />
+  <meta name="twitter:description" content="Not your basic Indian streetwear. Bold fits for every body." />
+  <meta name="twitter:image" content="assets/og-image.jpg" />
+
+  <!-- Google Search Console: paste verification meta tag here -->
+  <!-- <meta name="google-site-verification" content="YOUR_CODE_HERE" /> -->
+
+  <!-- Microsoft Clarity: paste snippet here -->
+  <!-- <script type="text/javascript">...</script> -->
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Twin Shade",
+    "url": "https://twinshade.in",
+    "logo": "https://twinshade.in/assets/logo.svg",
+    "sameAs": ["https://www.instagram.com/twinshade.in"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jaipur",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://twinshade.in"},
+      {"@type":"ListItem","position":2,"name":"Shop","item":"https://twinshade.in/shop"},
+      {"@type":"ListItem","position":3,"name":"New Drop","item":"https://twinshade.in/new-drop"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Product example -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Solid Drama Jumpsuit",
+    "image": "https://twinshade.in/assets/product-1.jpg",
+    "description": "Full-length editorial jumpsuit. Available XS–5XL.",
+    "brand": {"@type": "Brand", "name": "Twin Shade"},
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "price": "2499",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Critical inline CSS for hero (faster first paint) -->
+  <style>
+    :root {
+      --black: #0B0B0B;
+      --white: #FFFFFF;
+      --pink: #FF2D88;
+      --orange: #FF8A00;
+      --neutral: #F6F6F6;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-ui: 'DM Sans', system-ui, sans-serif;
+      --space-base: 16px;
+      --space-sm: 8px;
+      --space-md: 24px;
+      --space-lg: 32px;
+      --space-xl: 48px;
+      --space-2xl: 80px;
+      --radius-btn: 6px;
+      --radius-card: 4px;
+      --transition-fast: 80ms ease;
+      --transition-mid: 150ms ease;
+      --transition-slow: 400ms ease;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-ui);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    #hero {
+      min-height: 100svh;
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+      overflow: hidden;
+      background: var(--black);
+    }
+    #hero .hero-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, #0B0B0B 0%, #1a0a12 50%, #0B0B0B 100%);
+    }
+    .hero-img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      opacity: 0.7;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(11,11,11,0.95) 0%, rgba(11,11,11,0.3) 60%, transparent 100%);
+    }
+  </style>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     SECTION 1 — HEADER / GLOBAL CHROME
+============================================================ -->
+<header id="site-header" role="banner">
+  <div class="header-inner">
+    <a href="/" class="logo" aria-label="Twin Shade Home">
+      <span class="logo-text">TWIN<span class="logo-accent">SHADE</span></span>
+    </a>
+
+    <nav class="primary-nav" id="primary-nav" role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="#new-drop">New Drop</a></li>
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#inclusivity">Sizing</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#social">Lookbook</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Search" id="search-btn">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Account">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </button>
+      <button class="icon-btn cart-btn" aria-label="Cart (0 items)" id="cart-btn">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Search overlay -->
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" hidden>
+    <button class="search-close" id="search-close" aria-label="Close search">✕</button>
+    <input type="search" placeholder="Search Twin Shade…" aria-label="Search products" id="search-input" />
+  </div>
+</header>
+
+
+<!-- ============================================================
+     SECTION 2 — HERO / FIRST FOLD
+============================================================ -->
+<section id="hero" aria-labelledby="hero-headline">
+  <div class="hero-bg"></div>
+
+  <!-- Background video (desktop only, optional) -->
+  <video
+    class="hero-video"
+    autoplay muted loop playsinline
+    aria-hidden="true"
+    poster="assets/hero.jpg"
+  >
+    <!-- <source src="assets/hero.mp4" type="video/mp4"> -->
+  </video>
+
+  <picture>
+    <source media="(min-width:1024px)" srcset="assets/hero-lg.jpg 1440w" />
+    <source media="(min-width:640px)" srcset="assets/hero-md.jpg 768w" />
+    <img
+      class="hero-img"
+      src="assets/hero.jpg"
+      srcset="assets/hero.jpg 480w, assets/hero-md.jpg 768w, assets/hero-lg.jpg 1440w"
+      sizes="100vw"
+      alt="Model in bold Twin Shade co-ord set"
+      loading="eager"
+      fetchpriority="high"
+    />
+  </picture>
+  <div class="hero-overlay"></div>
+
+ <div class="hero-content" data-animate="fade-up">
+    <h1 id="hero-headline">Loud. Inclusive.<br /><em>Twin Shade.</em></h1>
+    <div class="hero-cta-row">
+      <a href="#products" class="btn btn-primary" aria-label="Shop the new drop">Shop New Drop</a>
+      <a href="#inclusivity" class="btn btn-ghost-white" aria-label="View size guide">XS – 5XL</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 3 — BRAND STATEMENT
+============================================================ -->
+<section id="brand-statement" aria-labelledby="statement-headline" data-animate="fade-up">
+  <div class="container">
+    <div class="statement-grid">
+      <div class="statement-text">
+        <span class="overline">Our Manifesto</span>
+        <h2 id="statement-headline">Fashion for every damn body.</h2>
+        <p>Twin Shade is where boho meets artsy meets street. We build for real bodies — every curve, every edge, every size. Based in Jaipur. Built for everywhere.</p>
+        <div class="statement-actions">
+          <button class="btn btn-outline" id="size-guide-trigger" aria-haspopup="dialog">
+            <span class="plus-badge-inline">+ Plus-size friendly</span>
+            View Size Guide
+          </button>
+          <a href="#story" class="text-link">Our Story →</a>
+        </div>
+      </div>
+      <div class="statement-marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>BOLD &nbsp;·&nbsp; INCLUSIVE &nbsp;·&nbsp; JAIPUR &nbsp;·&nbsp; STREETWEAR &nbsp;·&nbsp; XS–5XL &nbsp;·&nbsp; BOLD &nbsp;·&nbsp; INCLUSIVE &nbsp;·&nbsp; JAIPUR &nbsp;·&nbsp; STREETWEAR &nbsp;·&nbsp; XS–5XL &nbsp;·&nbsp;</span>
+          <span aria-hidden="true">BOLD &nbsp;·&nbsp; INCLUSIVE &nbsp;·&nbsp; JAIPUR &nbsp;·&nbsp; STREETWEAR &nbsp;·&nbsp; XS–5XL &nbsp;·&nbsp; BOLD &nbsp;·&nbsp; INCLUSIVE &nbsp;·&nbsp; JAIPUR &nbsp;·&nbsp; STREETWEAR &nbsp;·&nbsp; XS–5XL &nbsp;·&nbsp;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 4 — PRODUCT / EDITORIAL SHOWCASE GRID
+============================================================ -->
+<section id="products" aria-labelledby="products-headline">
+  <div class="container">
+    <div class="section-header" data-animate="fade-up">
+      <span class="overline">New Drop</span>
+      <h2 id="products-headline">Solid Drama Collection</h2>
+    </div>
+    <div class="product-grid" id="product-grid" role="list">
+      <!-- Populated by JS from products.json -->
+    </div>
+    <div class="products-cta" data-animate="fade-up">
+      <a href="#" class="btn btn-outline-pink">View Full Collection</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 5 — INCLUSIVITY & FIT
+============================================================ -->
+<section id="inclusivity" aria-labelledby="inclusivity-headline">
+  <div class="container">
+    <div class="inclusivity-header" data-animate="fade-up">
+      <span class="overline" style="color:var(--pink)">Every Size. Every Story.</span>
+      <h2 id="inclusivity-headline">Fashion that fits<br /><em>you.</em></h2>
+    </div>
+
+    <div class="inclusivity-grid">
+      <div class="model-mosaic" data-animate="fade-left">
+        <figure class="model-card model-card--tall">
+          <img src="assets/model-1.jpg"
+               srcset="assets/model-1.jpg 400w, assets/model-1@2x.jpg 800w"
+               sizes="(min-width:768px) 33vw, 80vw"
+               alt="Model in Twin Shade jumpsuit, size XL"
+               loading="lazy" />
+        </figure>
+        <figure class="model-card model-card--short">
+          <img src="assets/model-2.jpg"
+               srcset="assets/model-2.jpg 400w"
+               sizes="(min-width:768px) 20vw, 50vw"
+               alt="Model in Twin Shade co-ord set, size 2XL"
+               loading="lazy" />
+        </figure>
+        <figure class="model-card model-card--med">
+          <img src="assets/model-3.jpg"
+               srcset="assets/model-3.jpg 400w"
+               sizes="(min-width:768px) 25vw, 60vw"
+               alt="Model in Twin Shade statement dress, size 3XL"
+               loading="lazy" />
+        </figure>
+      </div>
+
+      <div class="inclusivity-right" data-animate="fade-right">
+        <blockquote class="testimonial">
+          <p>"I've never found streetwear that actually fits me — until Twin Shade. I feel seen, and I feel <em>fire.</em>"</p>
+          <cite>— Priya K., 3XL</cite>
+        </blockquote>
+
+        <!-- Size Recommendation Micro-Tool -->
+        <div class="size-tool" id="size-tool" role="form" aria-labelledby="size-tool-title">
+          <h3 id="size-tool-title">Find My Fit</h3>
+          <p class="size-tool-sub">Enter your measurements in inches</p>
+          <div class="size-inputs">
+            <label>
+              <span>Chest</span>
+              <input type="number" id="st-chest" placeholder="e.g. 38" min="28" max="60" aria-label="Chest in inches" />
+            </label>
+            <label>
+              <span>Waist</span>
+              <input type="number" id="st-waist" placeholder="e.g. 32" min="24" max="56" aria-label="Waist in inches" />
+            </label>
+            <label>
+              <span>Hips</span>
+              <input type="number" id="st-hip" placeholder="e.g. 40" min="30" max="64" aria-label="Hips in inches" />
+            </label>
+          </div>
+          <button class="btn btn-primary" id="size-calc-btn">Find My Fit</button>
+          <div class="size-result" id="size-result" role="alert" aria-live="polite" hidden></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 6 — BRAND STORY / EDITORIAL STRIP
+============================================================ -->
+<section id="story" aria-labelledby="story-headline">
+  <div class="container">
+    <div class="story-intro" data-animate="fade-up">
+      <span class="overline">Who We Are</span>
+      <h2 id="story-headline">Born in Jaipur.<br />Worn everywhere.</h2>
+    </div>
+
+    <div class="story-block story-block--left" data-animate="fade-up">
+      <figure class="story-img">
+        <img src="assets/story-1.jpg" alt="Behind the scenes at Twin Shade studio, Jaipur" loading="lazy" />
+      </figure>
+      <div class="story-copy">
+        <p>Twin Shade started as a question: why does "streetwear" always feel like it was made for one kind of body? Dimple had been designing for years — bold prints, unexpected silhouettes — and the answer kept coming back the same. It didn't have to be this way.</p>
+        <p>So she built a brand that didn't. Every piece in every collection is cut for XS through 5XL. No compromises. No afterthoughts. Just fashion.</p>
+      </div>
+    </div>
+
+    <blockquote class="pull-quote" data-animate="fade-up">
+      <p>"We don't do 'plus-size as an afterthought.' <br />We do <em>fashion, full stop.</em>"</p>
+      <cite>— Dimple, Founder</cite>
+    </blockquote>
+
+    <div class="story-block story-block--right" data-animate="fade-up">
+      <div class="story-copy">
+        <p>The boho-artsy-street DNA isn't accidental. Jaipur bleeds colour. The city taught us that bold is not loud for the sake of it — it's a point of view. Twin Shade is that point of view, tailored and stitched with intention.</p>
+        <p>Every drop is limited. Every silhouette is intentional. Every size is real.</p>
+      </div>
+      <figure class="story-img">
+        <img src="assets/story-2.jpg" alt="Twin Shade fabric swatches and design sketches" loading="lazy" />
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 7 — CTA STRIP + TRUST SIGNALS
+============================================================ -->
+<section id="cta-strip" aria-labelledby="cta-headline">
+  <div class="cta-band">
+    <div class="container">
+      <div class="cta-inner" data-animate="fade-up">
+        <div class="cta-text">
+          <span class="overline" style="color:rgba(255,255,255,0.6)">The Drop Is Live</span>
+          <h2 id="cta-headline">Your wardrobe<br /><em>is calling.</em></h2>
+        </div>
+        <a href="#products" class="btn btn-white" aria-label="Shop Twin Shade new drop">Shop New Drop</a>
+      </div>
+      <div class="trust-bar" data-animate="fade-up">
+        <div class="trust-item">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <span>Free shipping ₹1500+</span>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Made in Jaipur</span>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>XS — 5XL always</span>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>DM to order</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 8 — SOCIAL MOSAIC
+============================================================ -->
+<section id="social" aria-labelledby="social-headline">
+  <div class="container">
+    <div class="section-header" data-animate="fade-up">
+      <span class="overline">@twinshade.in</span>
+      <h2 id="social-headline">As worn.<br /><em>In the wild.</em></h2>
+      <a href="https://instagram.com/twinshade.in" target="_blank" rel="noopener" class="ig-follow" aria-label="Follow Twin Shade on Instagram">Follow on Instagram →</a>
+    </div>
+    <!-- Note: Replace with Instagram Basic Display API. See README for token instructions. -->
+    <div class="social-mosaic" id="social-mosaic" role="list">
+      <button class="mosaic-item" data-img="assets/insta-1.jpg" data-caption="Solid Drama drop 🔥 #TwinShade" role="listitem" aria-label="Instagram post 1 — open in lightbox">
+        <img src="assets/insta-1.jpg" alt="Twin Shade Instagram post — bold co-ord set" loading="lazy" />
+        <div class="mosaic-overlay"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+      </button>
+      <button class="mosaic-item mosaic-item--tall" data-img="assets/insta-2.jpg" data-caption="Co-ord energy ✨ #StreetWear #Jaipur" role="listitem" aria-label="Instagram post 2">
+        <img src="assets/insta-2.jpg" alt="Twin Shade Instagram — model in co-ord" loading="lazy" />
+        <div class="mosaic-overlay"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+      </button>
+      <button class="mosaic-item" data-img="assets/insta-3.jpg" data-caption="Bold in every size 💗" role="listitem" aria-label="Instagram post 3">
+        <img src="assets/insta-3.jpg" alt="Twin Shade Instagram — bold print top" loading="lazy" />
+        <div class="mosaic-overlay"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+      </button>
+      <button class="mosaic-item" data-img="assets/insta-4.jpg" data-caption="Jumpsuit era 🧡 #NewDrop" role="listitem" aria-label="Instagram post 4">
+        <img src="assets/insta-4.jpg" alt="Twin Shade Instagram — jumpsuit look" loading="lazy" />
+        <div class="mosaic-overlay"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+      </button>
+      <button class="mosaic-item mosaic-item--wide" data-img="assets/insta-5.jpg" data-caption="When the fabric hits different ✨" role="listitem" aria-label="Instagram post 5">
+        <img src="assets/insta-5.jpg" alt="Twin Shade Instagram — detail shot of fabric" loading="lazy" />
+        <div class="mosaic-overlay"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+      </button>
+      <button class="mosaic-item" data-img="assets/insta-6.jpg" data-caption="Boho x Artsy x Street 🖤" role="listitem" aria-label="Instagram post 6">
+        <img src="assets/insta-6.jpg" alt="Twin Shade Instagram — boho street look" loading="lazy" />
+        <div class="mosaic-overlay"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 9 — FOOTER / LEGAL
+============================================================ -->
+<footer id="site-footer" role="contentinfo">
+  <div class="footer-upper">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo" aria-label="Twin Shade Home">
+            <span class="logo-text">TWIN<span class="logo-accent">SHADE</span></span>
+          </a>
+          <p>Bold. Inclusive. Streetwear.<br />Jaipur → Everywhere.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/twinshade.in" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-nav-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">New Drop</a></li>
+            <li><a href="#">Jumpsuits</a></li>
+            <li><a href="#">Co-ords</a></li>
+            <li><a href="#">Tops</a></li>
+            <li><a href="#">View All</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#" id="size-guide-footer">Size Guide</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Care Guide</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="https://instagram.com/twinshade.in" target="_blank" rel="noopener">DM to Order</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay in the loop</h4>
+          <p>Drop alerts, early access, and zero spam.</p>
+          <form class="newsletter-form" novalidate>
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input type="email" id="newsletter-email" placeholder="your@email.com" required aria-required="true" />
+            <button type="submit" class="btn btn-pink" aria-label="Subscribe to newsletter">Subscribe</button>
+          </form>
+          <p class="newsletter-msg" id="newsletter-msg" role="alert" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-lower">
+    <div class="container">
+      <p>© 2025 Twin Shade. All rights reserved. Made with 💗 in Jaipur.</p>
+      <nav aria-label="Legal links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Accessibility</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     MODALS
+============================================================ -->
+
+<!-- Quick-View Modal -->
+<div id="quick-view-modal" class="modal" role="dialog" aria-modal="true" aria-label="Product quick view" hidden>
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-panel">
+    <button class="modal-close" aria-label="Close quick view" data-close-modal>✕</button>
+    <div class="qv-inner">
+      <div class="qv-gallery">
+        <div class="qv-main-img">
+          <img id="qv-img" src="" alt="" />
+        </div>
+        <div class="qv-thumbs" id="qv-thumbs" role="list"></div>
+      </div>
+      <div class="qv-info">
+        <p class="qv-category" id="qv-category"></p>
+        <h3 id="qv-name"></h3>
+        <p class="qv-price" id="qv-price"></p>
+        <p class="qv-desc" id="qv-desc"></p>
+        <div class="qv-sizes" id="qv-sizes" role="group" aria-labelledby="qv-size-label">
+          <span id="qv-size-label" class="qv-label">Select Size</span>
+        </div>
+        <div class="qv-size-tool-mini">
+          <button class="text-link" id="qv-size-tool-trigger">Not sure? Find My Fit ↓</button>
+          <div class="size-tool-mini" id="qv-size-mini" hidden>
+            <div class="size-inputs">
+              <label><span>Chest</span><input type="number" class="qv-chest" placeholder="e.g. 38" /></label>
+              <label><span>Waist</span><input type="number" class="qv-waist" placeholder="e.g. 32" /></label>
+              <label><span>Hips</span><input type="number" class="qv-hip" placeholder="e.g. 40" /></label>
+            </div>
+            <button class="btn btn-outline" id="qv-fit-btn">Find My Fit</button>
+            <div class="size-result" id="qv-fit-result" role="alert" aria-live="polite" hidden></div>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-full" id="qv-add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Size Guide Modal -->
+<div id="size-guide-modal" class="modal" role="dialog" aria-modal="true" aria-label="Twin Shade size guide" hidden>
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-panel modal-panel--wide">
+    <button class="modal-close" aria-label="Close size guide" data-close-modal>✕</button>
+    <h2>Twin Shade Size Guide</h2>
+    <p class="size-guide-intro">All measurements in inches. We cut for real bodies — if you're between sizes, go up.</p>
+    <div class="size-table-wrapper">
+      <table class="size-table" aria-label="Size chart — Twin Shade">
+        <thead>
+          <tr><th scope="col">Size</th><th scope="col">Chest</th><th scope="col">Waist</th><th scope="col">Hips</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>XS</td><td>32–33</td><td>26–27</td><td>34–35</td></tr>
+          <tr><td>S</td><td>34–35</td><td>28–29</td><td>36–37</td></tr>
+          <tr><td>M</td><td>36–37</td><td>30–31</td><td>38–39</td></tr>
+          <tr><td>L</td><td>38–40</td><td>32–34</td><td>40–42</td></tr>
+          <tr><td>XL</td><td>41–43</td><td>35–37</td><td>43–45</td></tr>
+          <tr><td>2XL</td><td>44–46</td><td>38–40</td><td>46–48</td></tr>
+          <tr><td>3XL</td><td>47–49</td><td>41–43</td><td>49–51</td></tr>
+          <tr><td>4XL</td><td>50–52</td><td>44–46</td><td>52–54</td></tr>
+          <tr><td>5XL</td><td>53–56</td><td>47–50</td><td>55–58</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="size-note">Can't find your size? DM us <a href="https://instagram.com/twinshade.in" target="_blank" rel="noopener">@twinshade.in</a> — we do custom sizing too.</p>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="modal" role="dialog" aria-modal="true" aria-label="Instagram photo lightbox" hidden>
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="lightbox-panel">
+    <button class="modal-close" aria-label="Close lightbox" data-close-modal>✕</button>
+    <img id="lightbox-img" src="" alt="" />
+    <p id="lightbox-caption"></p>
+    <div class="lightbox-nav">
+      <button id="lb-prev" aria-label="Previous photo">←</button>
+      <button id="lb-next" aria-label="Next photo">→</button>
+    </div>
+  </div>
+</div>
+
+<!-- Look Builder Panel (1% differentiator) -->
+<div id="look-builder-panel" class="look-panel" role="complementary" aria-label="Look builder" hidden>
+  <div class="look-panel-header">
+    <h4>My Look</h4>
+    <button id="look-panel-close" aria-label="Close look builder">✕</button>
+  </div>
+  <div id="look-items" class="look-items"></div>
+  <button class="btn btn-pink btn-full" id="look-save">Save Look</button>
+  <button class="btn btn-outline btn-full" id="look-clear">Clear</button>
+</div>
+<button id="look-builder-toggle" class="look-toggle" aria-label="Open look builder" aria-haspopup="true">
+  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+  <span class="look-count" id="look-count" aria-live="polite">0</span>
+</button>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>

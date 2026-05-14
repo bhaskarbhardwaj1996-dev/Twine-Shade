@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Solid Drama Jumpsuit",
+    "category": "Jumpsuit",
+    "price": "₹2,499",
+    "description": "Full-length wide-leg jumpsuit in heavyweight cotton blend. Cut for XS–5XL with a flared silhouette and deep V-neck. This is the statement piece the drop is named after.",
+    "images": ["assets/product-1.jpg", "assets/product-1b.jpg"],
+    "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+    "badge": "New Drop",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Boho Co-ord Set",
+    "category": "Co-ord",
+    "price": "₹1,999",
+    "description": "Matching crop top and wide-leg trouser in earthy tones. Versatile enough for the streets, the studio, or the stage.",
+    "images": ["assets/product-2.jpg"],
+    "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+    "badge": "Bestseller",
+    "featured": false
+  },
+  {
+    "id": 3,
+    "name": "Artsy Block Tee",
+    "category": "Top",
+    "price": "₹899",
+    "description": "Oversized drop-shoulder tee with bold colour-block print. 100% cotton. Designed to be worn tucked or loose.",
+    "images": ["assets/product-3.jpg"],
+    "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+    "badge": null,
+    "featured": false
+  },
+  {
+    "id": 4,
+    "name": "Drama Cargo Pants",
+    "category": "Bottoms",
+    "price": "₹1,699",
+    "description": "Low-rise wide-leg cargo in washed cotton. Six pockets, adjustable waist, and enough room for big energy.",
+    "images": ["assets/product-4.jpg"],
+    "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+    "badge": "New",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "name": "Pink Noise Dress",
+    "category": "Dress",
+    "price": "₹2,199",
+    "description": "Midi-length slip dress in dusty rose with asymmetric hem. Adjustable straps, side slit, and zero compromises.",
+    "images": ["assets/product-5.jpg"],
+    "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+    "badge": "Limited",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "name": "Jaipur Street Jacket",
+    "category": "Outerwear",
+    "price": "₹3,299",
+    "description": "Lightweight bomber with embroidered back panel. Inspired by the colours of Jaipur markets. Each piece is subtly unique.",
+    "images": ["assets/product-6.jpg"],
+    "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+    "badge": "Collab",
+    "featured": false
+  }
+]
